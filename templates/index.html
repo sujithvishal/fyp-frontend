@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css" />
+    <title>Lung Cancer Prediction</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="jumbotron">LUNG CANCER PREDICTION</h1>
+        <br><br>
+        <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" required placeholder="Hours Studied" name="my_image" id="pwd">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        {% if prediction %}
+        <div class="result-container">
+            <img src="{{img_path}}" alt="Prediction Image" class="result-image" height="200" width="200">
+            <h2>Your Prediction: <i>{{prediction}}</i></h2>
+        </div>
+        {% endif %}
+
+    </div>
+    <div class="authors">
+        <div class="made">
+            MADE BY
+        </div>
+        <div class="auth">
+
+            <p>Bava Viknesh RMG</p>
+            <p>Sujith Vishal</p>
+            <p>Rishi Gauthama</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

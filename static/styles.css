@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image:linear-gradient(rgb(67, 67, 217),rgb(21, 21, 84));
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-success{
+    border:none;
+    color:white;
+    background-color: green;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-lg {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.result-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.authors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width:100%;
+}
+
+.made{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.auth{
+    margin: 20px;
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    font-size: larger;
+    font-family:cursive;
+}
